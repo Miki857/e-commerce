@@ -1,0 +1,223 @@
+/* ATRIBUTES */
+.flex{
+    display: flex;
+  }
+  
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.gap-00_5{
+    gap: 0.5rem;
+}
+
+.gap-01{
+    gap: 1rem;
+}
+
+.gap-01_5{
+    gap: 1.5rem;
+}
+
+.gap-02{
+    gap: 2rem;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-evenly{
+    align-items: space-evenly;
+}
+
+.align-around{
+    align-items: space-around;
+}
+
+.align-between{
+    align-items: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.height-fitContent{
+    height: fit-content;
+}
+
+.margin-top-00_5{
+    margin-top: 0.5rem;
+}
+
+.margin-top-01{
+    margin-top: 1rem;
+}
+
+.margin-top-01_5{
+    margin-top: 1.5rem;
+}
+
+.margin-top-02{
+    margin-top: 2rem;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.hiddenTransition{
+    transform: translateX(100vw);
+    opacity: 0;
+}
+
+.hiddenScale{
+    transform: scale(0.0);
+    opacity: 0;
+}
+
+.hiddenOpacity{
+    opacity: 0;
+}
+
+.basicShadow{
+    box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.3);
+}
+
+.button{
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem 1.25rem;
+
+    background-color: red;
+    color: white;
+
+    outline: solid 0 black;
+
+    transition: all 0.15s ease-in-out;
+}
+
+.loadingScreen{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 4;
+
+    color: white;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+/* RED BTN */
+.button:hover{
+    box-shadow: 0 0 10px 0.5px black;
+}
+
+/* SEARCH BTN */
+.searchBTN{
+    border-radius: 0;
+    border: none;
+    padding: 0.5rem 1.25rem;
+
+    background-color: rgb(32, 230, 65);
+    color: white;
+
+    transition: all 0.15s ease-in-out;
+}
+
+.searchBTN:hover{
+    outline: solid 1px black;
+}
+
+/* CHECKOUT BTN */
+.checkoutBTN{
+    border-radius: 1rem;
+    border: none;
+    padding: 0.5rem 1.25rem;
+
+    background-color: rgb(32, 230, 65);
+    color: white;
+
+    transition: all 0.15s ease-in-out;
+}
+
+.checkoutBTN:hover{
+    outline: solid 1px black;
+}
+
+/* ADD BTN */
+.addBTN{
+    border-radius: 1rem;
+    border: none;
+    padding: 0.5rem 1.25rem;
+
+    background-color: rgb(252, 203, 45);
+    color: white;
+
+    transition: all 0.15s ease-in-out;
+}
+
+.addBTN:hover{
+    outline: solid 1px black;
+}
+
+/* ARROW BTN */
+.arrowBTN{
+    border: none;
+    background-color: transparent;
+    color: black;
+    padding: 0.5rem 1rem;
+}
+
+/* FILTER BTN */
+.filterBTN{
+    align-self: flex-end;
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+/* CLOSE BTN */
+.closeBTN-X{
+    align-self: center;
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.input{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-bottom: solid 1px gray;
+    /*REMOVE ARROWS*/
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+.input:focus{
+    outline: none;
+    border: none;
+}

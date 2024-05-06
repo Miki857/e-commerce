@@ -1,0 +1,16 @@
+.cartCard{
+    border-radius: 1rem;
+    padding: 1rem;
+    border-bottom: solid 1px gray;
+
+    .price{
+        position: absolute;
+        top: 0;
+        background: linear-gradient(90deg, rgba(255,194,0,0) 0%, rgba(0,0,0,1) 50%, rgba(255,194,0,0) 100%);
+        color: white;
+        padding: 0.5rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(-75%);
+        width: 100%;
+    }
+}

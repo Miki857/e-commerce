@@ -1,0 +1,18 @@
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: auto auto 1fr;
+}
+
+@media screen and (min-width: 1000px){
+    #root{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        height: 100vh;
+    }
+}

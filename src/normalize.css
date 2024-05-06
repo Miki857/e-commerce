@@ -1,0 +1,30 @@
+/*-- RESET--*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-width: 0;
+}
+
+*{
+    transition: all 0.3s ease-in-out;
+}
+
+body{
+    margin: 0;
+    min-height: 100dvh;
+    padding: 0;
+}
+
+h1, h2, h3, h4{
+    margin: 0;
+    text-wrap: wrap;
+}
+
+p{
+    text-wrap: pretty;
+    margin: 0;
+}
+
