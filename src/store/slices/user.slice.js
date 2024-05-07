@@ -22,7 +22,7 @@ export const getUserHunk = (url) => (dispatch) => {//Get User.
         .finally(() => dispatch(setLoading(false)));
 }
 
-export const createUserHunk = (url) => (data) => {//Create User.
+export const createUserHunk = (url) => (data, dispatch) => {//Create User.
     axios.post(url, data)
         .then(res => {
             //Automaticamente iniciamos sesion:

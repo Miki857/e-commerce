@@ -36,7 +36,7 @@ const Header = () => {
       });
     }else{
       //REGISTRARSE:--------------------------------------------------------------
-      dispatch(setUser(createUserHunk("https://e-commerce-api-v2.academlo.tech/api/v1/users")(data)));
+      dispatch(setUser(createUserHunk("https://e-commerce-api-v2.academlo.tech/api/v1/users")(data, dispatch)));
       reset({//Este es un metodo que ya viene incluido en 'useForm', se usa para resetear, blanquear, o dar valores distintos a los input del 'form', por ahora solo los vamos a blanquear.
         firstName: "",
         lastName: "",
