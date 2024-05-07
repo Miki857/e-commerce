@@ -48,8 +48,6 @@ function App() {
     }
   }, [loading]);
 
-  console.log(user)
-
   return (
     <>
       {/* LOADING */}

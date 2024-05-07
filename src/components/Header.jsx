@@ -66,8 +66,6 @@ const Header = () => {
         console.log(2)
         let bool = false;// Nos servira para saber si el item deve actualizarse o agregarse enteramente.
         cart.map(_product => {
-          console.log("_product:" + _product, "id:" + _product.id)
-          console.log("_currentProduct:" + _currentProduct, "quantity:" + _currentProduct.quantity)
           if(_currentProduct.id == _product.product.id){//Si el 'id' del alguno de los items de 'currentCartProducts' es igual a alguno de los de la DDBB:
             //Actualizamos quantity:Nuevo valor = quantityDelCarritoDDBB + quantityCarritoLocal
             dispatch(setCart(modifyQuantityThunk(_product.id, {"quantity": (_product.quantity + _currentProduct.quantity)})(dispatch)));
@@ -83,13 +81,6 @@ const Header = () => {
       dispatch(setCartProducts([]));
     }
   }, [cart]);
-
-  // console.log("cart:",cart);
-  // console.log("currentCartProducts:", currentCartProducts);
-  // console.log("user:", user);
-  // console.log("localStorage_userName:", localStorage.getItem("userName"));
-  // console.log("localStorage_token:", localStorage.getItem("token"));
-  // console.log("purchases:", purchases);
 
   //LOG OUT:------------------------------------------------------------------------
   const logOut = () => {
@@ -149,8 +140,6 @@ const Header = () => {
     dispatch(setSumaTotal(suma));//Actualizamos suma total.
   }, [currentCartProducts, cart]);
 
-  console.log(cart)
-
   //CHECKOUT:------------------------------------------------------------------------------------------------------
   const checkout = () => {
     if(user){
@@ -161,6 +150,7 @@ const Header = () => {
       console.log("inicia sesion primero.")
     }
   }
+  
   return (
     <header className='header flex justify-between align-center'>
         <h2 className='logo cursor-pointer' onClick={() => {navigate("/"); dispatch(setCurrentProducts(allProducts));}}>e-commerce</h2>
