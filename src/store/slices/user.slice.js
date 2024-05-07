@@ -17,7 +17,7 @@ export default user.reducer;
 //REDUX HUNK:
 export const getUserHunk = (url) => (dispatch) => {//Get User.
     axios.get(url)
-        .then(res => console.log(red.data))
+        .then(/*res => console.log(red.data)*/)
         .catch(err => console.log(err))
         .finally(() => dispatch(setLoading(false)));
 }
@@ -26,7 +26,7 @@ export const createUserHunk = (url) => (data, dispatch) => {//Create User.
     axios.post(url, data)
         .then(res => {
             //Automaticamente iniciamos sesion:
-            console.log("USer Created: ", res.data);
+            //console.log("USer Created: ", res.data);
         })
         .catch(err => console.log(err))
         .finally(() => dispatch(setLoading(false)));
