@@ -131,7 +131,6 @@ const Header = () => {
         suma += +item.product.price * item.quantity;
       }
     }else{
-      console.log(currentCartProducts);
       //Sumamos el carrito local:
       for(const item of currentCartProducts){//Iteramos por cada item en el carrito => item = {quantity, product, id};
         suma += +item.product.price * item.quantity;

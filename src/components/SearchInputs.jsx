@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import "./css/searchInputs.css";
 import { useDispatch, useSelector } from 'react-redux';
 import { setCurrentProducts } from '../store/slices/currentProducts';
-import axios, { all } from 'axios';
+import axios from 'axios';
 import RenderProducts from './RenderProducts';
 import { setLoading } from '../store/slices/loading.slice';
 
@@ -117,7 +117,9 @@ const SearchInputs = () => {
   //QUITAMOS LOADING SCREEN:
   useEffect(() => {
     //Loading Screen:
-    dispatch(setLoading(false));
+    if(allProducts.length != 0){
+      dispatch(setLoading(false));
+    }
   }, [currentProducts])
 
   //SEARCH-INPUT---------------------------------------------------------------------------------------------------------------

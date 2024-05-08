@@ -11,8 +11,6 @@ import Product from "./pages/Product";
 
 import "./normalize.css"
 import "./attributes.css"
-import axios from "axios";
-import getConfig from "./store/slices/utils/getConfig";
 
 
 function App() {
@@ -38,7 +36,7 @@ function App() {
     if(loading){
       loadingScreen.current.classList.remove("hiddenOpacity");
       setTimeout(() => {
-        loadingScreen.current.style = "display: block";
+        loadingScreen.current.style = "display: flex";
       }, 300);
     }else{
       loadingScreen.current.classList.add("hiddenOpacity");
